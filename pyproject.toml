@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "DeepFapar"
+version = "0.1.0"
+description = "UAV biophysical estimation using Neural Networks"
+readme = "README.md"
+authors = [
+    { name = "C.Minuesa", email = "cesar.minuesa@irta.cat" }
+]
+license = { file = "LICENSE" }
+requires-python = ">=3.8,<3.12"
+
+dependencies = [
+  "numpy>=1.23",
+  "pandas>=1.4",
+  "matplotlib>=3.5",
+  "scikit-learn>=1.1",
+  "tensorflow>=2.11",
+  "keras>=2.11",
+  "openpyxl>=3.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
